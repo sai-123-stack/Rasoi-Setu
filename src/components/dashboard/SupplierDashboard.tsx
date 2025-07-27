@@ -1,3 +1,4 @@
+import { Users } from 'lucide-react';
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -58,6 +59,13 @@ const SupplierDashboard: React.FC = () => {
       icon: Package,
       color: 'bg-gradient-primary',
       href: '/inventory',
+    },
+    {
+      title: t('group_orders'),
+      description: 'Review and accept group buy orders',
+      icon: Users,
+      color: 'bg-gradient-primary',
+      href: '/supplier/group-orders', // Add the link here
     },
     {
       title: t('directOrders'),
